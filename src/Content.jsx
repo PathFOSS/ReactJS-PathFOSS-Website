@@ -1,8 +1,6 @@
 import VideoSection from "./VideoSection";
 import VivoxiaVideo from "./videos/vivoxia_trailer.mp4";
-import VivoxiaThumbnail from "./images/vivoxia-logo.svg";
 import DullPhoneVideo from "./videos/dullphone_trailer.mp4";
-import DullPhoneThumbnail from "./images/dullphone_logo.svg";
 import TripleSection from "./TripleSection";
 import LogoSection from "./LogoSection";
 
@@ -13,7 +11,6 @@ const Content = () => {
         <VideoSection 
             title="Vivoxia"
             video={VivoxiaVideo}
-            thumbnail={VivoxiaThumbnail}
             textfirst={true}
             github="https://github.com/PathFOSS/Vivoxia"
             download="https://github.com/PathFOSS/Vivoxia/releases/download/v1.1.0/Vivoxia-1.1.0.apk"
@@ -22,7 +19,6 @@ const Content = () => {
         <VideoSection 
             title="Dull Phone"
             video={DullPhoneVideo}
-            thumbnail={DullPhoneThumbnail}
             textfirst={false}
             github="https://github.com/PathFOSS/DullPhone"
             download="https://github.com/PathFOSS/DullPhone/releases/download/v2.3.0/DullPhone-2.3.0.apk"
