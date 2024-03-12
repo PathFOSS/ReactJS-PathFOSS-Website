@@ -51,12 +51,13 @@ section {
 a {
     text-decoration: none;
     cursor: pointer;
-    font-weight: 200;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 p {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
 }
 
