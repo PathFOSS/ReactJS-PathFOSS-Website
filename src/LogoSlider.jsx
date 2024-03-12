@@ -1,5 +1,4 @@
 const LogoSlider = () => {
-    console.log("rendered");
     return <div className="logo-slider">
         {/* Python */}
         <svg viewBox="0 0 128 128">

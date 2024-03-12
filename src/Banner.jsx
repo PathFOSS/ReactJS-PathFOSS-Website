@@ -9,7 +9,7 @@ const Banner = () => {
             <div id="banner-content">
                 <p>Free and Open Source</p>
                 <h1>Coding for positive impact</h1>
-                <p>App-centered solutions for physical and mental health</p>
+                <p>Sensible solutions for self-improvement and finance</p>
             </div>
             <div id="banner-image">
                 <img src={Hand}/>

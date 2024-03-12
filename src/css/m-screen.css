@@ -288,6 +288,10 @@ footer > div > div {
     gap: var(--p-default);
 }
 
+#footer-menu {
+    align-items: flex-end;
+}
+
 #footer-menu a {
     color: var(--pc-white);
 }
