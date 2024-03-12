@@ -6,9 +6,9 @@
     --sc-brand: #77DD60;
     --t-trans: 0.5s;
     --t-logos: 120s;
-    --p-default: 1.5rem;
-    --p-horizontal: 4rem;
-    --m-spacing: 10rem;
+    --p-default: 1rem;
+    --p-horizontal: var(--p-default);
+    --m-spacing: 8rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
     --banner-height: 100vh;
@@ -51,12 +51,13 @@ section {
 a {
     text-decoration: none;
     cursor: pointer;
-    font-weight: 200;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 p {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -112,7 +113,7 @@ button {
     font-weight: 600;
     border: none;
     background-color: var(--pc-brand);
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     transition: var(--t-trans);
     display: flex;
     align-items: center;
@@ -151,8 +152,8 @@ button img {
 }
 
 #banner-container img {
-    height: 32rem;
-
+    height: 38rem;
+    display: none;
 }
 
 #banner-image {
@@ -168,23 +169,30 @@ button img {
 }
 
 .video-section {
-    display: flex;
-    justify-content: space-between;
     margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
+    gap: var(--p-default);
 }
 
 .video-section-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-    max-width: 70%;
+}
+
+.video-section-right, .video-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-default)
+}
+
+.video-section-left > .video-section-video{
+    order: 2;
 }
 
 .paragraph {
@@ -201,9 +209,9 @@ button img {
 
 .triple-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default));
+    gap: calc(2 * var(--p-default) + var(--i-width));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
@@ -257,7 +265,7 @@ button img {
 
 .logo-slider svg {
     height: var(--logo-height);
-    margin: 0rem var(--m-spacing) 0rem var(--p-default);
+    margin: 0rem calc(0.5 * var(--m-spacing)) 0rem var(--p-default);
 }
 
 @keyframes slide {
@@ -268,6 +276,7 @@ button img {
         transform: translateX(-100%)
     }
 }
+
 footer > div {
     display: flex;
     justify-content: space-between;
@@ -276,14 +285,15 @@ footer > div {
 footer > div > div {
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+
+#footer-menu {
+    align-items: end;
 }
 
 #footer-menu, #footer-explainer {
     gap: var(--p-default);
-}
-
-#footer-menu {
-    align-items: flex-end;
 }
 
 #footer-menu a {
@@ -296,5 +306,6 @@ footer > div > div {
 
 .react-player {
     height: auto !important;
+    width: 100% !important;
     aspect-ratio: 16/9;
 }

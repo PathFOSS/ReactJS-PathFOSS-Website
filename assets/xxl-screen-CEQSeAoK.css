@@ -7,7 +7,7 @@
     --t-trans: 0.5s;
     --t-logos: 120s;
     --p-default: 1.5rem;
-    --p-horizontal: var(--p-default);
+    --p-horizontal: 18rem;
     --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
@@ -51,12 +51,12 @@ section {
 a {
     text-decoration: none;
     cursor: pointer;
-    font-weight: 200;
-}
+    font-size: 1.25rem;
+    font-weight: 300;}
 
 p {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -151,7 +151,7 @@ button img {
 }
 
 #banner-container img {
-    height: 32rem;
+    height: 40rem;
 
 }
 
@@ -177,14 +177,14 @@ button img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
+    width: 30%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .paragraph {
@@ -203,7 +203,7 @@ button img {
     display: flex;
     justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: var(--p-default);
+    gap: calc(2 * var(--p-default));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }

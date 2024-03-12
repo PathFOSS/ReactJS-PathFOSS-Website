@@ -7,7 +7,7 @@
     --t-trans: 0.5s;
     --t-logos: 120s;
     --p-default: 1.5rem;
-    --p-horizontal: 18rem;
+    --p-horizontal: 4rem;
     --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
@@ -51,12 +51,12 @@ section {
 a {
     text-decoration: none;
     cursor: pointer;
-    font-weight: 200;
-}
+    font-size: 1.25rem;
+    font-weight: 300;}
 
 p {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -151,7 +151,7 @@ button img {
 }
 
 #banner-container img {
-    height: 40rem;
+    height: 32rem;
 
 }
 
