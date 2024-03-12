@@ -6,9 +6,9 @@
     --sc-brand: #77DD60;
     --t-trans: 0.5s;
     --t-logos: 120s;
-    --p-default: 1rem;
+    --p-default: 1.5rem;
     --p-horizontal: var(--p-default);
-    --m-spacing: 8rem;
+    --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
     --banner-height: 100vh;
@@ -112,7 +112,7 @@ button {
     font-weight: 600;
     border: none;
     background-color: var(--pc-brand);
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     transition: var(--t-trans);
     display: flex;
     align-items: center;
@@ -151,7 +151,8 @@ button img {
 }
 
 #banner-container img {
-    height: 38rem;
+    height: 32rem;
+
 }
 
 #banner-image {
@@ -167,30 +168,23 @@ button img {
 }
 
 .video-section {
+    display: flex;
+    justify-content: space-between;
     margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: var(--p-default);
 }
 
 .video-section-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 35%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-}
-
-.video-section-right, .video-section-left {
-    display: flex;
-    flex-direction: column;
-    gap: var(--p-default)
-}
-
-.video-section-left > .video-section-video{
-    order: 2;
+    max-width: 60%;
 }
 
 .paragraph {
@@ -216,7 +210,7 @@ button img {
 
 .triple-section > div {
     border-radius: var(--radius);
-    padding: var(--p-default);
+    padding: calc(2 * var(--p-default));
     box-shadow: var(--bs-default) var(--bs-default) var(--bs-default) var(--pc-brand);
     text-align: center;
     background-color: var(--sc-black);
@@ -288,6 +282,10 @@ footer > div > div {
     gap: var(--p-default);
 }
 
+#footer-menu {
+    align-items: flex-end;
+}
+
 #footer-menu a {
     color: var(--pc-white);
 }
@@ -298,6 +296,5 @@ footer > div > div {
 
 .react-player {
     height: auto !important;
-    width: 100% !important;
     aspect-ratio: 16/9;
 }
