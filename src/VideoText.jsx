@@ -4,7 +4,7 @@ import AndroidLogo from "./images/android-logo.svg";
 const VideoText = (props) => {
     return <div className="video-section-text">
         <div>
-            <h3>{props.title}</h3>
+            <h3 id={`${props.title}`.toLowerCase()}>{props.title}</h3>
             <p className="paragraph">{props.text}</p>
             <div className="cta-buttons">
                 <a href={props.github}>
