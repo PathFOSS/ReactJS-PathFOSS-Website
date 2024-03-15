@@ -11,6 +11,7 @@ const Banner = () => {
                 <h1>Coding for positive impact</h1>
                 <p>Sensible solutions for self-improvement and finance</p>
             </div>
+            
             <div id="banner-image">
                 <img src={Hand}/>
             </div>
