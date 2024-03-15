@@ -1,5 +1,6 @@
 import GitHubLogo from "./images/github-logo.svg";
 import AndroidLogo from "./images/android-logo.svg";
+import GlobeIcon from "./images/globe.svg";
 
 const VideoText = (props) => {
     return <div className="video-section-text">
@@ -10,8 +11,8 @@ const VideoText = (props) => {
                 <a href={props.github}>
                     <button>GitHub<img src={GitHubLogo}/></button>
                 </a>
-                <a href={props.download}>
-                    <button>Download APK<img src={AndroidLogo}/></button>
+                <a href={props.download ? props.download : props.website}>
+                    <button>{props.download ? "Download APK" : "Visit Site"}<img src={props.download ? AndroidLogo : GlobeIcon}/></button>
                 </a>
             </div>
         </div>

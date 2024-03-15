@@ -1,4 +1,5 @@
 import VideoSection from "./VideoSection";
+import CryptoTrackerVideo from "./videos/cryptotracker_trailer.mp4";
 import VivoxiaVideo from "./videos/vivoxia_trailer.mp4";
 import DullPhoneVideo from "./videos/dullphone_trailer.mp4";
 import TripleSection from "./TripleSection";
@@ -8,6 +9,14 @@ const Content = () => {
     return <div>
         <h2>Projects</h2>
         <p className="italic-text">Made for you with passion and perseverance</p>
+        <VideoSection 
+            title="CryptoTracker"
+            video={CryptoTrackerVideo}
+            textfirst={false}
+            github="https://github.com/PathFOSS/CryptoTracker"
+            website="https://crypto.pathfoss.com"
+            text="CryptoTracker is a private and minimalist cryptocurrency price and chart viewer app on the internet. Using CoinMarketCap data strategically, it achieves lightning fast loading speeds of up to 75% faster than CoinMarketCap itself. It is possible to configure a custom background data refresh rate as well as search for over 9,000 cryptocurrencies."
+        />
         <VideoSection 
             title="Vivoxia"
             video={VivoxiaVideo}
