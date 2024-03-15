@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             <div id="footer-explainer">
                 <a onClick={ScrollToTop}><h4>PathFOSS</h4></a>
-                <p>Providing sensible Android solutions since 2023</p>
+                <p>Providing sensible tech solutions since 2023</p>
                 <p id="footer-license">PathFOSS.com | GPLv3 Licensed Website</p>
             </div>
             <div id="footer-menu">
