@@ -1,8 +1,8 @@
 const Navbar = () => {
     return <nav>
-        <h3>PathFOSS</h3>
-        <a href="mailto:patrick@pathfoss.com">
-            <button>Contact</button>
+        <h3><span>PathFOSS</span> Portfolio</h3>
+        <a href="#about">
+            <button>About</button>
         </a>
     </nav>
 }

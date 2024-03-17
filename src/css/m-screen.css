@@ -36,12 +36,6 @@ body {
     background-color: var(--pc-black);
     color: var(--pc-white);
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 section {
@@ -88,6 +82,10 @@ h3 {
 h4 {
     font-size: 1.25rem;
     margin: 0;
+    color: var(--pc-brand);
+}
+
+span {
     color: var(--pc-brand);
 }
 
@@ -305,4 +303,26 @@ footer > div > div {
     height: auto !important;
     width: 100% !important;
     aspect-ratio: 16/9;
+}
+
+#about {
+    margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
+}
+
+.iconized-text {
+    display: flex;
+    align-items: center;
+}
+
+.iconized-text img {
+    height: 1.25rem;
+}
+
+.iconized-text p {
+    margin: 0rem 0rem 0rem 0.3rem;
+    color: var(--pc-brand);
+}
+
+.video-section-text .iconized-text {
+    margin-bottom: var(--p-default);
 }

@@ -5,12 +5,12 @@ const VideoSection = (props) => {
     return <section>
         {props.textfirst ? 
             (<div className="video-section video-section-right">
-                <VideoText github={props.github} download={props.download} website={props.website} title={props.title} text={props.text}/>
+                <VideoText github={props.github} download={props.download} website={props.website} title={props.title} text={props.text} languages={props.languages}/>
                 <VideoPlayer video={props.video}/>
             </div>) : 
             (<div className="video-section video-section-left">
                 <VideoPlayer video={props.video}/>
-                <VideoText github={props.github} download={props.download} website={props.website} title={props.title} text={props.text}/>
+                <VideoText github={props.github} download={props.download} website={props.website} title={props.title} text={props.text} languages={props.languages}/>
             </div>)
         }
     </section>
