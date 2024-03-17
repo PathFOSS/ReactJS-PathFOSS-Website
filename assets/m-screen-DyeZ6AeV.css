@@ -36,12 +36,6 @@ body {
     background-color: var(--pc-black);
     color: var(--pc-white);
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 section {
@@ -88,6 +82,10 @@ h3 {
 h4 {
     font-size: 1.25rem;
     margin: 0;
+    color: var(--pc-brand);
+}
+
+span {
     color: var(--pc-brand);
 }
 
@@ -153,7 +151,6 @@ button img {
 
 #banner-container img {
     height: 38rem;
-    display: none;
 }
 
 #banner-image {
@@ -209,16 +206,16 @@ button img {
 
 .triple-section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default) + var(--i-width));
+    gap: var(--p-default);
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
 
 .triple-section > div {
     border-radius: var(--radius);
-    padding: calc(2 * var(--p-default));
+    padding: var(--p-default);
     box-shadow: var(--bs-default) var(--bs-default) var(--bs-default) var(--pc-brand);
     text-align: center;
     background-color: var(--sc-black);
@@ -265,7 +262,7 @@ button img {
 
 .logo-slider svg {
     height: var(--logo-height);
-    margin: 0rem calc(0.5 * var(--m-spacing)) 0rem var(--p-default);
+    margin: 0rem var(--m-spacing) 0rem var(--p-default);
 }
 
 @keyframes slide {
@@ -276,17 +273,22 @@ button img {
         transform: translateX(-100%)
     }
 }
+footer > div {
+    display: flex;
+    justify-content: space-between;
+}
 
-#footer-menu {
-    margin-top: var(--p-default);
+footer > div > div {
+    display: flex;
+    flex-direction: column;
 }
 
 #footer-menu, #footer-explainer {
-    display: flex;
-    flex-direction: column;
     gap: var(--p-default);
-    align-items: center;
-    text-align: center;
+}
+
+#footer-menu {
+    align-items: flex-end;
 }
 
 #footer-menu a {
@@ -301,4 +303,26 @@ button img {
     height: auto !important;
     width: 100% !important;
     aspect-ratio: 16/9;
+}
+
+#about {
+    margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
+}
+
+.iconized-text {
+    display: flex;
+    align-items: center;
+}
+
+.iconized-text img {
+    height: 1.25rem;
+}
+
+.iconized-text p {
+    margin: 0rem 0rem 0rem 0.3rem;
+    color: var(--pc-brand);
+}
+
+.video-section-text .iconized-text {
+    margin-bottom: var(--p-default);
 }
