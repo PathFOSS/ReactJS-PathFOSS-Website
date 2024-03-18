@@ -8,7 +8,7 @@ const AboutSection = () => {
         <p className="paragraph">I am open to new job opportunities related to full stack development and excited to help build amazing new projects.</p>
         <div className="iconized-text">
             <img className="icon-small" src={EmailIcon}/>
-            <p className="paragraph">patrick@pathfoss.com</p>
+            <p className="paragraph">info@pathfoss.com</p>
         </div>
     </section>
 }
