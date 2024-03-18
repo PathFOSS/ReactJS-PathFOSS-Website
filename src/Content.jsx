@@ -10,6 +10,7 @@ const Content = () => {
     return <div>
         <h2>Projects</h2>
         <p className="italic-text">Made for you with passion and perseverance</p>
+
         <VideoSection 
             title="CryptoTracker"
             video={CryptoTrackerVideo}
@@ -19,6 +20,7 @@ const Content = () => {
             languages="React, Node, Express, MySQL"
             text="CryptoTracker is a private and minimalist cryptocurrency price and chart viewer app on the internet. Using CoinMarketCap data strategically, it achieves lightning fast loading speeds of up to 75% faster than CoinMarketCap itself. It is possible to set a custom background data refresh rate and search for over 9,000 coins."
         />
+
         <VideoSection 
             title="Vivoxia"
             video={VivoxiaVideo}
@@ -28,6 +30,7 @@ const Content = () => {
             languages="Java, SQLite"
             text="Vivoxia is an all-in-one application for a fitness enthusiast, featuring journals, goal settings, workout timer, and more. This app is minimal with under 10 MB of storage required to begin. There is zero tracking or analytics and everything you do is saved offline. The app supports all units and can be configured with both imperial and metric units."
         />
+
         <VideoSection 
             title="Dull Phone"
             video={DullPhoneVideo}
@@ -37,6 +40,7 @@ const Content = () => {
             languages="Java"
             text="Dull Phone is the self-control block timer that every digital native desperately needs to stop the mindless checking and scrolling on the phone. The app is a foreground overlay that disallows the use of all apps except those specified in the user whitelist. It can be only stopped by the timer or the configurable tap-to-unlock functionality."
         />
+        
         <TripleSection/>
         <AboutSection/>
         <LogoSection/>
