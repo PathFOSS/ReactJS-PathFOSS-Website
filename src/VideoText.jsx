@@ -13,10 +13,10 @@ const VideoText = (props) => {
                 <p>{props.languages}</p>
             </div>
             <div className="cta-buttons">
-                <a href={props.github}>
+                <a href={props.github} rel="nofollow" target="_blank">
                     <button>GitHub<img src={GitHubLogo}/></button>
                 </a>
-                <a href={props.download ? props.download : props.website}>
+                <a href={props.download ? props.download : props.website} rel="nofollow" target="_blank">
                     <button>{props.download ? "Download APK" : "Visit Site"}<img src={props.download ? AndroidLogo : GlobeIcon}/></button>
                 </a>
             </div>

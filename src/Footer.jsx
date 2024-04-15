@@ -15,8 +15,8 @@ const Footer = () => {
             </div>
             <div id="footer-menu">
                 <h4>Browse</h4>
-                <a href="https://github.com/PathFOSS">GitHub</a>
-                <a href="mailto:info@pathfoss.com">Email</a>
+                <a href="https://github.com/PathFOSS" rel="nofollow" target="_blank">GitHub</a>
+                <a href="mailto:info@pathfoss.com" rel="nofollow" target="_blank">Email</a>
             </div>
         </div>
     </footer>
