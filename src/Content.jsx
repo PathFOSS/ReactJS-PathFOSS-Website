@@ -13,7 +13,7 @@ const Content = () => {
 
         <VideoSection 
             title="CryptoTracker"
-            video={CryptoTrackerVideo}
+            video="https://invidious.privacyredirect.com/watch?v=RUwTvCyeohQ"
             textfirst={false}
             github="https://github.com/PathFOSS/CryptoTracker"
             website="https://crypto.pathfoss.com"
