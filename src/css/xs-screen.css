@@ -9,7 +9,7 @@
     --gradient-color-3: #171717;
     --t-trans: 0.5s;
     --t-logos: 120s;
-    --p-default: 1rem;
+    --p-default: 0.5rem;
     --p-horizontal: var(--p-default);
     --m-spacing: 8rem;
     --radius: 0.5rem;
@@ -19,6 +19,10 @@
     --i-width: 3rem;
     --i-margin-trans: -2rem;
     --logo-height: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -335,4 +339,19 @@ button img {
 
 .gone {
     display: none !important;
+}
+
+nav div {
+    display: flex;
+    gap: var(--p-default);
+}
+
+.img-btn {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+.img-btn img{
+    height: 2rem;
 }

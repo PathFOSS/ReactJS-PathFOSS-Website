@@ -21,6 +21,10 @@
     --logo-height: 4rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -331,4 +335,19 @@ footer > div > div {
 
 .gone {
     display: none !important;
+}
+
+nav div {
+    display: flex;
+    gap: var(--p-default);
+}
+
+.img-btn {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+.img-btn img{
+    height: 2rem;
 }
