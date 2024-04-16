@@ -1,7 +1,16 @@
 import Navbar from "./Navbar";
 import Hand from "./images/hand.png";
+import HandSmall from "./images/hand-small.png";
+import { useState } from "react";
 
 const Banner = () => {
+
+    const [image, setImage] = useState(false);
+    const styleDict = {
+        true: "",
+        false: "gone"
+    }
+
     return <div id="banner">
         <Navbar/>
         <div id="banner-container">
@@ -11,8 +20,12 @@ const Banner = () => {
                 <p>Sensible solutions for self-improvement and finance</p>
             </div>
             
-            <div id="banner-image">
-                <img src={Hand}/>
+            <div id="banner-image" className={styleDict[!image]}>
+                <img src={HandSmall}/>
+            </div>
+
+            <div id="banner-image" className={styleDict[image]}>
+                <img src={Hand} onLoad={() => setImage(true)}/>
             </div>
         </div>
 

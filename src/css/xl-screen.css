@@ -328,3 +328,7 @@ footer > div > div {
 .video-section-text .iconized-text {
     margin-bottom: var(--p-default);
 }
+
+.gone {
+    display: none !important;
+}
