@@ -9,9 +9,9 @@
     --gradient-color-3: #171717;
     --t-trans: 0.5s;
     --t-logos: 120s;
-    --p-default: 1.5rem;
-    --p-horizontal: 18rem;
-    --m-spacing: 10rem;
+    --p-default: 0.5rem;
+    --p-horizontal: var(--p-default);
+    --m-spacing: 8rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
     --banner-height: 100vh;
@@ -19,6 +19,10 @@
     --i-width: 3rem;
     --i-margin-trans: -2rem;
     --logo-height: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -49,7 +53,8 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
-    font-weight: 300;}
+    font-weight: 300;
+}
 
 p {
     font-size: 1.25rem;
@@ -113,7 +118,7 @@ button {
     font-weight: 600;
     border: none;
     background-color: var(--pc-brand);
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     transition: var(--t-trans);
     display: flex;
     align-items: center;
@@ -159,8 +164,8 @@ button img {
 }
 
 #banner-container img {
-    height: 40rem;
-
+    height: 38rem;
+    display: none;
 }
 
 #banner-image {
@@ -176,23 +181,30 @@ button img {
 }
 
 .video-section {
-    display: flex;
-    justify-content: space-between;
     margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
+    gap: var(--p-default);
 }
 
 .video-section-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-    max-width: 70%;
+}
+
+.video-section-right, .video-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-default)
+}
+
+.video-section-left > .video-section-video{
+    order: 2;
 }
 
 .paragraph {
@@ -209,9 +221,9 @@ button img {
 
 .triple-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default));
+    gap: calc(2 * var(--p-default) + var(--i-width));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
@@ -265,7 +277,7 @@ button img {
 
 .logo-slider svg {
     height: var(--logo-height);
-    margin: 0rem var(--m-spacing) 0rem var(--p-default);
+    margin: 0rem calc(0.5 * var(--m-spacing)) 0rem var(--p-default);
 }
 
 @keyframes slide {
@@ -276,22 +288,17 @@ button img {
         transform: translateX(-100%)
     }
 }
-footer > div {
-    display: flex;
-    justify-content: space-between;
-}
 
-footer > div > div {
-    display: flex;
-    flex-direction: column;
+#footer-menu {
+    margin-top: var(--p-default);
 }
 
 #footer-menu, #footer-explainer {
+    display: flex;
+    flex-direction: column;
     gap: var(--p-default);
-}
-
-#footer-menu {
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
 #footer-menu a {
@@ -304,6 +311,7 @@ footer > div > div {
 
 .react-player {
     height: auto !important;
+    width: 100% !important;
     aspect-ratio: 16/9;
 }
 
@@ -331,4 +339,19 @@ footer > div > div {
 
 .gone {
     display: none !important;
+}
+
+nav div {
+    display: flex;
+    gap: var(--p-default);
+}
+
+.img-btn {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+.img-btn img{
+    height: 2rem;
 }
