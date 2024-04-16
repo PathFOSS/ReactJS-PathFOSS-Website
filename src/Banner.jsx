@@ -1,9 +1,8 @@
 import Navbar from "./Navbar";
-import Background from "./images/background.jpg";
 import Hand from "./images/hand.png";
 
 const Banner = () => {
-    return <div id="banner" style={{backgroundImage: `url(${Background}`}}>
+    return <div id="banner">
         <Navbar/>
         <div id="banner-container">
             <div id="banner-content">
