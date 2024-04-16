@@ -4,6 +4,9 @@
     --sc-black: #222;
     --pc-brand: #A4C639;
     --sc-brand: #77DD60;
+    --gradient-color-1: #202020;
+    --gradient-color-2: #121212;
+    --gradient-color-3: #171717;
     --t-trans: 0.5s;
     --t-logos: 120s;
     --p-default: 1rem;
@@ -131,8 +134,15 @@ button img {
 #banner {
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
     height: var(--banner-height);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--gradient-color-1);
+    background-image: linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3));
+    background-size: 160px 280px;
+    background-position: 0 0, 0 0, 80px 140px, 80px 140px, 0 0, 80px 140px;
 }
 
 #banner-content {
@@ -151,7 +161,6 @@ button img {
 
 #banner-container img {
     height: 38rem;
-    display: none;
 }
 
 #banner-image {
@@ -207,16 +216,16 @@ button img {
 
 .triple-section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default) + var(--i-width));
+    gap: var(--p-default);
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
 
 .triple-section > div {
     border-radius: var(--radius);
-    padding: calc(2 * var(--p-default));
+    padding: var(--p-default);
     box-shadow: var(--bs-default) var(--bs-default) var(--bs-default) var(--pc-brand);
     text-align: center;
     background-color: var(--sc-black);
@@ -263,7 +272,7 @@ button img {
 
 .logo-slider svg {
     height: var(--logo-height);
-    margin: 0rem calc(0.5 * var(--m-spacing)) 0rem var(--p-default);
+    margin: 0rem var(--m-spacing) 0rem var(--p-default);
 }
 
 @keyframes slide {
@@ -274,7 +283,6 @@ button img {
         transform: translateX(-100%)
     }
 }
-
 footer > div {
     display: flex;
     justify-content: space-between;
@@ -283,15 +291,14 @@ footer > div {
 footer > div > div {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-#footer-menu {
-    align-items: end;
 }
 
 #footer-menu, #footer-explainer {
     gap: var(--p-default);
+}
+
+#footer-menu {
+    align-items: flex-end;
 }
 
 #footer-menu a {

@@ -4,11 +4,14 @@
     --sc-black: #222;
     --pc-brand: #A4C639;
     --sc-brand: #77DD60;
+    --gradient-color-1: #202020;
+    --gradient-color-2: #121212;
+    --gradient-color-3: #171717;
     --t-trans: 0.5s;
     --t-logos: 120s;
-    --p-default: 1rem;
-    --p-horizontal: var(--p-default);
-    --m-spacing: 8rem;
+    --p-default: 1.5rem;
+    --p-horizontal: 4rem;
+    --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
     --banner-height: 100vh;
@@ -46,8 +49,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
-    font-weight: 300;
-}
+    font-weight: 300;}
 
 p {
     font-size: 1.25rem;
@@ -111,7 +113,7 @@ button {
     font-weight: 600;
     border: none;
     background-color: var(--pc-brand);
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     transition: var(--t-trans);
     display: flex;
     align-items: center;
@@ -131,8 +133,15 @@ button img {
 #banner {
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
     height: var(--banner-height);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--gradient-color-1);
+    background-image: linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3));
+    background-size: 160px 280px;
+    background-position: 0 0, 0 0, 80px 140px, 80px 140px, 0 0, 80px 140px;
 }
 
 #banner-content {
@@ -150,8 +159,8 @@ button img {
 }
 
 #banner-container img {
-    height: 38rem;
-    display: none;
+    height: 32rem;
+
 }
 
 #banner-image {
@@ -167,30 +176,23 @@ button img {
 }
 
 .video-section {
+    display: flex;
+    justify-content: space-between;
     margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: var(--p-default);
 }
 
 .video-section-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-}
-
-.video-section-right, .video-section-left {
-    display: flex;
-    flex-direction: column;
-    gap: var(--p-default)
-}
-
-.video-section-left > .video-section-video{
-    order: 2;
+    max-width: 70%;
 }
 
 .paragraph {
@@ -207,9 +209,9 @@ button img {
 
 .triple-section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default) + var(--i-width));
+    gap: calc(2 * var(--p-default));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
@@ -263,7 +265,7 @@ button img {
 
 .logo-slider svg {
     height: var(--logo-height);
-    margin: 0rem calc(0.5 * var(--m-spacing)) 0rem var(--p-default);
+    margin: 0rem var(--m-spacing) 0rem var(--p-default);
 }
 
 @keyframes slide {
@@ -274,17 +276,22 @@ button img {
         transform: translateX(-100%)
     }
 }
+footer > div {
+    display: flex;
+    justify-content: space-between;
+}
 
-#footer-menu {
-    margin-top: var(--p-default);
+footer > div > div {
+    display: flex;
+    flex-direction: column;
 }
 
 #footer-menu, #footer-explainer {
-    display: flex;
-    flex-direction: column;
     gap: var(--p-default);
-    align-items: center;
-    text-align: center;
+}
+
+#footer-menu {
+    align-items: flex-end;
 }
 
 #footer-menu a {
@@ -297,7 +304,6 @@ button img {
 
 .react-player {
     height: auto !important;
-    width: 100% !important;
     aspect-ratio: 16/9;
 }
 

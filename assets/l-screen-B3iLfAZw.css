@@ -4,10 +4,13 @@
     --sc-black: #222;
     --pc-brand: #A4C639;
     --sc-brand: #77DD60;
+    --gradient-color-1: #202020;
+    --gradient-color-2: #121212;
+    --gradient-color-3: #171717;
     --t-trans: 0.5s;
     --t-logos: 120s;
     --p-default: 1.5rem;
-    --p-horizontal: 4rem;
+    --p-horizontal: var(--p-default);
     --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
@@ -46,7 +49,8 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
-    font-weight: 300;}
+    font-weight: 300;
+}
 
 p {
     font-size: 1.25rem;
@@ -130,8 +134,15 @@ button img {
 #banner {
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
     height: var(--banner-height);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--gradient-color-1);
+    background-image: linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(30deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(150deg, var(--gradient-color-2) 12%, transparent 12.5%, transparent 87%, var(--gradient-color-2) 87.5%, var(--gradient-color-2)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3)),
+    linear-gradient(60deg, var(--gradient-color-3) 25%, transparent 25.5%, transparent 75%, var(--gradient-color-3) 75%, var(--gradient-color-3));
+    background-size: 160px 280px;
+    background-position: 0 0, 0 0, 80px 140px, 80px 140px, 0 0, 80px 140px;
 }
 
 #banner-content {
@@ -175,14 +186,14 @@ button img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 35%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .paragraph {
@@ -201,7 +212,7 @@ button img {
     display: flex;
     justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default));
+    gap: var(--p-default);
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
