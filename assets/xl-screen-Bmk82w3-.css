@@ -10,7 +10,7 @@
     --t-trans: 0.5s;
     --t-logos: 120s;
     --p-default: 1.5rem;
-    --p-horizontal: var(--p-default);
+    --p-horizontal: 4rem;
     --m-spacing: 10rem;
     --radius: 0.5rem;
     --b-height: 2.5rem;
@@ -53,8 +53,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
-    font-weight: 300;
-}
+    font-weight: 300;}
 
 p {
     font-size: 1.25rem;
@@ -160,12 +159,12 @@ button img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: calc(var(--banner-height) - var(--p-default) - var(--b-height));
+    height: calc(var(--banner-height) - var(--p-default) - 2.2rem);
 }
 
 #banner-container img {
     height: 32rem;
-
+    animation: fadeIn 1s ease-in;
 }
 
 #banner-image {
@@ -190,14 +189,14 @@ button img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
+    width: 30%;
 }
 
 .video-section-video {
     display: flex;
     justify-content: end;
     align-items: center;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .paragraph {
@@ -216,7 +215,7 @@ button img {
     display: flex;
     justify-content: space-between;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: var(--p-default);
+    gap: calc(2 * var(--p-default));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
@@ -350,5 +349,14 @@ nav div {
 }
 
 .img-btn img{
-    height: 2rem;
+    height: 2.2rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
