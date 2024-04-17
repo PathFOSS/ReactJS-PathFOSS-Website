@@ -159,12 +159,12 @@ button img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: calc(var(--banner-height) - var(--p-default) - var(--b-height));
+    height: calc(var(--banner-height) - var(--p-default) - 2.2rem);
 }
 
 #banner-container img {
     height: 40rem;
-
+    animation: fadeIn 1s ease-in;
 }
 
 #banner-image {
@@ -349,5 +349,14 @@ nav div {
 }
 
 .img-btn img{
-    height: 2rem;
+    height: 2.2rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
