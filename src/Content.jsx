@@ -7,6 +7,10 @@ import LogoSection from "./LogoSection";
 import AboutSection from "./AboutSection";
 
 const Content = () => {
+
+    const vivoxiaVersion = "1.1.1";
+    const dullPhoneVersion = "2.3.0";
+
     return <div>
         <h2>Projects</h2>
         <p className="italic-text">Made for you with passion and perseverance</p>
@@ -26,7 +30,7 @@ const Content = () => {
             video={VivoxiaVideo}
             textfirst={true}
             github="https://github.com/PathFOSS/Vivoxia"
-            download="https://github.com/PathFOSS/Vivoxia/releases/download/v1.1.0/Vivoxia-1.1.0.apk"
+            download={`https://github.com/PathFOSS/Vivoxia/releases/download/v${vivoxiaVersion}/Vivoxia-${vivoxiaVersion}.apk`}
             languages="Java, SQLite"
             text="Vivoxia is an all-in-one application for a fitness enthusiast, featuring journals, goal settings, workout timer, and more. This app is minimal with under 10 MB of storage required to begin. There is zero tracking or analytics and everything you do is saved offline. The app supports all units and can be configured with both imperial and metric units."
         />
@@ -36,7 +40,7 @@ const Content = () => {
             video={DullPhoneVideo}
             textfirst={false}
             github="https://github.com/PathFOSS/DullPhone"
-            download="https://github.com/PathFOSS/DullPhone/releases/download/v2.3.0/DullPhone-2.3.0.apk"
+            download={`https://github.com/PathFOSS/DullPhone/releases/download/v${dullPhoneVersion}/DullPhone-${dullPhoneVersion}.apk`}
             languages="Java"
             text="Dull Phone is the self-control block timer that every digital native desperately needs to stop the mindless checking and scrolling on the phone. The app is a foreground overlay that disallows the use of all apps except those specified in the user whitelist. It can be only stopped by the timer or the configurable tap-to-unlock functionality."
         />
