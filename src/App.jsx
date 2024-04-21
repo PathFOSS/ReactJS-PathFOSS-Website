@@ -1,6 +1,6 @@
-import Banner from "./Banner";
 import Content from "./Content";
-import Footer from "./Footer";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 export default function App() {
     return <div>

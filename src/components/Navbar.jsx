@@ -1,5 +1,5 @@
-import InfoIcon from "./images/info-circle.svg";
-import GitHubIcon from "./images/github.svg";
+import InfoIcon from "../images/info-circle.svg";
+import GitHubIcon from "../images/github.svg";
 
 const Navbar = () => {
     return <nav>

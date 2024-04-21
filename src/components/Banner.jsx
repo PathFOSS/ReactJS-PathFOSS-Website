@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
-import Hand from "./images/hand.png";
-import HandSmall from "./images/hand-small.png";
+import Hand from "../images/hand.png";
+import HandSmall from "../images/hand-small.png";
 import { useState } from "react";
 
 const Banner = () => {
@@ -21,11 +21,11 @@ const Banner = () => {
             </div>
             
             <div id="banner-image" className={styleDict[!image]}>
-                <img src={HandSmall}/>
+                <img src={HandSmall} alt="hand"/>
             </div>
 
             <div id="banner-image" className={styleDict[image]}>
-                <img src={Hand} onLoad={() => setImage(true)}/>
+                <img src={Hand} onLoad={() => setImage(true)} alt="preload-hand"/>
             </div>
         </div>
 

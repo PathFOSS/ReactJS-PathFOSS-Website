@@ -1,7 +1,7 @@
-import GitHubLogo from "./images/github-logo.svg";
-import AndroidLogo from "./images/android-logo.svg";
-import GlobeIcon from "./images/globe.svg";
-import ChevronIcon from "./images/chevron-right.svg";
+import GitHubLogo from "../images/github-logo.svg";
+import AndroidLogo from "../images/android-logo.svg";
+import GlobeIcon from "../images/globe.svg";
+import ChevronIcon from "../images/chevron-right.svg";
 
 const VideoText = (props) => {
     return <div className="video-section-text">

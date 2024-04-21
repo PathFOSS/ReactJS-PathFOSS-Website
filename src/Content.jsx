@@ -1,10 +1,10 @@
-import VideoSection from "./VideoSection";
+import VideoSection from "./components/VideoSection";
 import CryptoTrackerVideo from "./videos/cryptotracker_trailer.mp4";
 import VivoxiaVideo from "./videos/vivoxia_trailer.mp4";
 import DullPhoneVideo from "./videos/dullphone_trailer.mp4";
-import TripleSection from "./TripleSection";
-import LogoSection from "./LogoSection";
-import AboutSection from "./AboutSection";
+import TripleSection from "./components/TripleSection";
+import LogoSection from "./components/LogoSection";
+import AboutSection from "./components/AboutSection";
 
 const Content = () => {
 

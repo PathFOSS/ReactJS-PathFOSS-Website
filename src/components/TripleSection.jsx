@@ -1,7 +1,7 @@
 import TextElement from "./TextElement";
-import FreedomIcon from "./images/freedom.svg";
-import PrivacyIcon from "./images/privacy.svg";
-import MinimalismIcon from "./images/minimalism.svg";
+import FreedomIcon from "../images/freedom.svg";
+import PrivacyIcon from "../images/privacy.svg";
+import MinimalismIcon from "../images/minimalism.svg";
 
 const TripleSection = () => {
     return <section className="triple-section">
