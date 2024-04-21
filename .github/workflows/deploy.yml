@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Execute Vitest tests
+        run: npm run test
+        
       - name: Checkout repo
         uses: actions/checkout@v2
 
