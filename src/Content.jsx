@@ -9,7 +9,7 @@ import AboutSection from "./components/AboutSection";
 const Content = () => {
 
     const vivoxiaVersion = "1.1.1";
-    const dullPhoneVersion = "2.3.1";
+    const dullPhoneVersion = "2.4.0";
 
     return <div>
         <h2>Projects</h2>
