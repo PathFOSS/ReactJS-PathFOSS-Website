@@ -224,14 +224,14 @@ button img {
     display: flex;
     flex-direction: column;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default) + var(--i-width));
+    gap: var(--m-spacing);
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
 
 .triple-section > div {
     border-radius: var(--radius);
-    padding: calc(2 * var(--p-default));
+    padding: calc(3 * var(--p-default));
     box-shadow: var(--bs-default) var(--bs-default) var(--bs-default) var(--pc-brand);
     text-align: center;
     background-color: var(--sc-black);
@@ -298,7 +298,6 @@ footer > div {
 footer > div > div {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #footer-menu {
