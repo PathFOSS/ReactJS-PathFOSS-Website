@@ -224,14 +224,14 @@ button img {
     display: flex;
     flex-direction: column;
     padding: 0rem var(--p-horizontal) 0rem var(--p-horizontal);
-    gap: calc(2 * var(--p-default) + var(--i-width));
+    gap: calc(var(--m-spacing) + var(--i-width));
     margin-bottom: 200px;
     margin-top: calc(var(--m-spacing) + var(--i-width));
 }
 
 .triple-section > div {
     border-radius: var(--radius);
-    padding: calc(2 * var(--p-default));
+    padding: calc(4 * var(--p-default));
     box-shadow: var(--bs-default) var(--bs-default) var(--bs-default) var(--pc-brand);
     text-align: center;
     background-color: var(--sc-black);
@@ -290,6 +290,12 @@ button img {
     }
 }
 
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.5 * var(--m-spacing));
+}
+
 #footer-menu {
     margin-top: var(--p-default);
 }
@@ -318,6 +324,9 @@ button img {
 
 #about {
     margin: var(--m-spacing) var(--p-horizontal) 0rem var(--p-horizontal);
+    display: flex;
+    flex-direction: column;
+    gap: var(--p-default);
 }
 
 .iconized-text {
