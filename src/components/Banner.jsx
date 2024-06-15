@@ -14,6 +14,7 @@ const Banner = () => {
     return <div id="banner">
         <Navbar/>
         <div id="banner-container">
+            
             <div id="banner-content">
                 <p>Free and Open Source</p>
                 <h1>Coding for positive impact</h1>
